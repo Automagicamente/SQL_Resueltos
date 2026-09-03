@@ -5,8 +5,9 @@ CREATE DATABASE sql_key;
 USE sql_key;
 
 CREATE TABLE usuarios (
-    id INT PRIMARY KEY,
-    nombre VARCHAR(50)
+    id INT,
+    nombre VARCHAR(50),
+    PRIMARY KEY (id)
 );
 
 CREATE TABLE pedidos (
@@ -42,5 +43,5 @@ INSERT INTO pedidos VALUES
 (114, 4),
 (115, 4);
 
-SELECT * FROM productos;
+SELECT * FROM pedidos;
 SELECT * FROM usuarios;
